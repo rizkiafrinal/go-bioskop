@@ -12,7 +12,7 @@ var Conn *sql.DB
 
 func Connect() {
 	var err error
-	connStr := "host=localhost port=5432 user=postgres password=Aviat12 dbname=bioskop_db sslmode=disable"
+	connStr := "host=postgres.railway.internal port=5432 user=postgres password=rYkTffnZoERlyPPLIwXIvsvKtJGOTwmo dbname=railway sslmode=disable"
 	Conn, err = sql.Open("postgres", connStr)
 	if err != nil {
 		log.Fatal("Gagal koneksi ke database:", err)
